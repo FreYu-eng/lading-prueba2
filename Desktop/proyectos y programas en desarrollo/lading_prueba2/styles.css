@@ -11,13 +11,13 @@ body {
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
   font-family: 'Segoe UI', Arial, sans-serif;
-  background: #f5f5f5;
+  background: #00446b;
 }
 
 /* Header con Grid para logo y menú */
 .header {
-  background: #222;
-  color: #fff;
+  background: #0097a7;
+  color: #00446b;
   padding: 1rem 0;
 }
 
@@ -52,36 +52,183 @@ body {
 .navbar a:hover {
   color: #00bcd4;
 }
+.navbar ul li {
+  display: flex;
+  align-items: center;
+}
 
-/* Hero section con Grid */
-.hero {
-  display: grid;
+.navbar ul li:last-child {
+  margin-left: 1rem; /* Espacio entre el último enlace y el botón */
+}
+
+.navbar button {
+  background: #00bcd4;
+  color: #222;
+  border: none;
+  padding: 0.3rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Oculta el checkbox y el ícono en escritorio */
+.menu-toggle {
+  display: none;
+}
+.menu-icon {
+  display: none;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+/* Responsive para móviles */
+@media (max-width: 800px) {
+  .navbar {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    gap: 1rem;
+    position: relative;
+  }
+  .navbar img {
+    justify-self: start;
+  }
+  .menu-icon {
+    display: block;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    z-index: 2;
+  }
+  .navbar ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #222;
+    flex-direction: column;
+    display: none; /* Oculto por defecto */
+    gap: 0;
+    padding: 1rem 0;
+    z-index: 1;
+  }
+  /* Cuando el checkbox está activo, muestra el menú */
+  .menu-toggle:checked + .menu-icon + ul {
+    display: flex;
+  }
+  .navbar ul li, .navbar ul button {
+    margin: 1rem 0;
+    text-align: center;
+  }
+}
+
+/* Imagen redonda y con sombra */
+.hero-image img {
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 2px 16px rgba(0,188,212,0.15);
+  border: 6px solid #e0f7fa;
+  background: #e0f7fa;
+  display: block;
+  margin: 0 auto;
+}
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 2.5rem;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  max-width: 1200px;
-  margin: 2rem auto;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-  padding: 2rem;
-  gap: 2rem;
 }
-
-.hero-content h1 {
-  font-size: 2.5rem;
-  color: #222;
-  margin-bottom: 1rem;
-}
-
+.hero-content h1,
 .hero-content p {
-  font-size: 1.2rem;
-  color: #555;
+  text-align: center;
+}
+.hero-actions {
+  justify-content: center;
 }
 
-.hero-image img {
-  width: 100%;
-  max-width: 350px;
+@media (max-width: 800px) {}
+  .hero-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .hero-image {
+    grid-column: 1;
+    justify-self: center;
+    margin-bottom: 1.2rem;
+  }
+/* Título destacado */
+.hero-content h1 {
+  font-size: 2.7rem;
+  color: #222;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  letter-spacing: 1px;
+  background: linear-gradient(90deg, #00bcd4 0%, #0097a7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Párrafo con estilo suave */
+.hero-content p {
+  font-size: 1.25rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  background: #e0f7fa;
+  padding: 0.7rem 1rem;
   border-radius: 8px;
+  box-shadow: 0 1px 8px rgba(0,188,212,0.07);
+}
+
+/* Responsive para móviles */
+@media (max-width: 800px) {
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 1.2rem;
+  }
+  .hero-image img {
+    margin-bottom: 1.2rem;
+  }
+}
+
+.hero button {
+  background: #00bcd4;
+  color: #222;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 2px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.social-icons a {
+  color: #00bcd4;
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+  transition: color 0.2s;
+  text-decoration: none;
+}
+
+.social-icons a:last-child {
+  margin-right: 0;
+}
+
+.social-icons a:hover {
+  color: #222;
 }
 
 /* Features usando Grid */
@@ -104,8 +251,9 @@ body {
 }
 
 .feature {
-  background: #00bcd4;
-  color: #fff;
+  background: #fff;
+  color: #00bcd4;
+  border: 2px solid #00bcd4;
   padding: 2rem;
   border-radius: 8px;
   text-align: center;
@@ -143,13 +291,36 @@ body {
   font-weight: bold;
 }
 
-/* Footer */
-.footer {
-  background: #222;
-  color: #fff;
-  text-align: center;
-  padding: 1rem 0;
-  margin-top: 2rem;
+.features h2,
+.qualities h2 {
+  font-size: 2.2rem;
+  color: #00bcd4;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  letter-spacing: 1px;
+  border-left: 5px solid #00bcd4;
+  padding-left: 1rem;
+  background: linear-gradient(90deg, #e0f7fa 0%, #fff 100%);
+  border-radius: 8px;
+}
+
+.features-grid .feature i,
+.qualities-grid .quality i {
+  color: #00bcd4;
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+  vertical-align: middle;
+}
+
+.features-grid .feature,
+.qualities-grid .quality {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
 }
 
 /* Responsive para móviles */
@@ -170,4 +341,38 @@ body {
   .navbar ul {
     justify-content: center;
   }
+}
+/* Footer profesional */
+.footer {
+  background: linear-gradient(90deg, #0097a7 0%, #00bcd4 100%);
+  color: #fff;
+  text-align: center;
+  padding: 2rem 0 1rem 0;
+  margin-top: 3rem;
+  border-top: 4px solid #e0f7fa;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.footer .footer-social {
+  margin-bottom: 1rem;
+}
+
+.footer .footer-social a {
+  color: #fff;
+  margin: 0 0.7rem;
+  font-size: 1.5rem;
+  transition: color 0.2s;
+  text-decoration: none;
+}
+
+.footer .footer-social a:hover {
+  color: #222;
+}
+
+.footer p {
+  opacity: 0.85;
+  font-size: 1rem;
+  margin: 0;
 }
