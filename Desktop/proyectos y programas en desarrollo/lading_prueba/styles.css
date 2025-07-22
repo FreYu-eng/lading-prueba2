@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  background-color: #f8fafc;
+  padding: 20px;
+  background-image: url("img y icono/bg-03.jpg.jpeg");
+  background-size: cover;       
+  background-repeat: no-repeat; 
+  background-position: center;  
+  background-attachment: fixed;
+}
+.hero {
+  padding: 60px 0;
+  background-color: #ffffff;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.text-column {
+  flex: 1 1 500px;
+  padding: 20px;
+}
+
+.text-column h1 {
+  font-size: 2.5rem;
+  color: #0f172a;
+  margin-bottom: 20px;
+}
+
+.text-column p {
+  font-size: 1.1rem;
+  color: #475569;
+  margin-bottom: 30px;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.primary {
+  background-color: #0f172a;
+  color: white;
+}
+
+.primary:hover {
+  background-color: #1e293b;
+}
+
+.secondary {
+  background-color: transparent;
+  color: #0f172a;
+  border: 2px solid #0f172a;
+}
+
+.secondary:hover {
+  background-color: #f1f5f9;
+}
+
+.image-column {
+  flex: 1 1 500px;
+  padding: 20px;
+  text-align: center;
+}
+
+.image-column img {
+  max-width: 100%;
+  height: auto;
+}
+
+.clientes {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f1f5f9;
+}
+
+.clientes h2 {
+  font-size: 1.4rem;
+  color: #0f172a;
+  margin-bottom: 40px;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.logos img {
+  max-height: 40px;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.logos img:hover {
+  opacity: 1;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #421792;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #530d6e;
+}

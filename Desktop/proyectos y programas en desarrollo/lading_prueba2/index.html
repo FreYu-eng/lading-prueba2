@@ -3,71 +3,106 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Maquetación Grid</title>
+  <title>Gerold - Web Developer</title>
+  <!-- Estilos base reorganizados -->
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
-  <!-- Header con logo y navegación -->
-<header class="header">
-  <nav class="navbar">
-    <img src="img/image (1).png" alt="Logo" /> 
-    <!-- Menú hamburguesa para móviles -->
-    <input type="checkbox" id="menu-toggle" class="menu-toggle" />
-    <label for="menu-toggle" class="menu-icon">&#9776;</label>
-    <ul>
-      <li><a href="#">SERVICES</a></li>
-      <li><a href="#">WORKS</a></li>
-      <li><a href="#">RESUME</a></li>
-      <li><a href="#">SKILLS</a></li>
-      <li><a href="#">TESTIMONIALS</a></li>
-      <li><a href="#">CONTACT</a></li>
-      <li><button class="btn">Resumen</button></li>
-    </ul>
-  </nav>
-</header>
+  <!-- HEADER -->
+  <header class="header">
+    <nav class="navbar">
+      <img src="img/logo.png" alt="Logo Gerold" />
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+      <ul>
+        <li><a href="#">SERVICES</a></li>
+        <li><a href="#">WORKS</a></li>
+        <li><a href="#">RESUME</a></li>
+        <li><a href="#">SKILLS</a></li>
+        <li><a href="#">TESTIMONIALS</a></li>
+        <li><a href="#">CONTACT</a></li>
+        <li><button class="btn">Resumen</button></li>
+      </ul>
+    </nav>
+  </header>
 
-  <!-- Sección principal tipo Hero -->
-<section class="hero">
-  <div class="hero-content">
-    <div class="hero-image">
-      <img src="img/image.png" alt="Hero image" />
-    </div>
-    <h1>I am Gerold Next-Level Web Developer.</h1>
-    <p>I break down complex user experience problems to 
-      create integrity focused solutions that connect billions of people</p>
-    <div class="hero-actions">
-      <button class="btn">Contactame!</button>
-      <div class="social-icons">
-        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
-        <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>I am Gerold Next-Level Web Developer.</h1>
+        <p>I break down complex user experience problems to create integrity-focused solutions that connect billions of people.</p>
+        <div class="hero-actions">
+          <button class="btn">Contáctame</button>
+          <div class="social-icons">
+            <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="img/hero.png" alt="Gerold" />
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-  <!-- Experiencia usando Grid -->
+  <!-- EXPERIENCIA -->
   <section class="features">
-  <h2><i class="fas fa-briefcase"></i> Experiencia</h2>
-  <div class="features-grid">
-    <div class="feature"><i class="fas fa-user-tie"></i> +14 años de experiencia</div>
-    <div class="feature"><i class="fas fa-project-diagram"></i> +50 proyectos completados</div>
-    <div class="feature"><i class="fas fa-smile"></i> +100 clientes satisfechos</div>
-  </div>
-</section>
+    <h2><i class="fas fa-briefcase"></i> Experiencia</h2>
+    <div class="grid-cards">
+      <div class="card"><i class="fas fa-user-tie"></i> +14 años de experiencia</div>
+      <div class="card"><i class="fas fa-project-diagram"></i> +50 proyectos completados</div>
+      <div class="card"><i class="fas fa-smile"></i> +100 clientes satisfechos</div>
+    </div>
+  </section>
 
-<section class="qualities">
-  <h2><i class="fas fa-star"></i> Cualidades</h2>
-  <div class="qualities-grid">
-    <div class="quality"><i class="fas fa-code"></i> Desarrollo Web</div>
-    <div class="quality"><i class="fas fa-paint-brush"></i> Diseño UX/UI</div>
-    <div class="quality"><i class="fas fa-comments"></i> Consultoría Digital</div>
-  </div>
-</section>
+  <!-- CUALIDADES -->
+  <section class="qualities">
+    <h2><i class="fas fa-star"></i> Cualidades</h2>
+    <div class="grid-cards">
+      <div class="card"><i class="fas fa-code"></i> Desarrollo Web</div>
+      <div class="card"><i class="fas fa-paint-brush"></i> Diseño UX/UI</div>
+      <div class="card"><i class="fas fa-comments"></i> Consultoría Digital</div>
+    </div>
+  </section>
 
-  <!-- Footer -->
+  <!-- LOGROS -->
+  <section class="achievements">
+    <h2><i class="fas fa-trophy"></i> Logros</h2>
+    <div class="grid-cards">
+      <div class="card"><i class="fas fa-award"></i> Premio a la Innovación 2020</div>
+      <div class="card"><i class="fas fa-medal"></i> Medalla de Oro en Hackathon 2021</div>
+      <div class="card"><i class="fas fa-certificate"></i> Certificación en Desarrollo Ágil</div>
+      <div class="card">
+        <img src="img/inferfast.png" alt="Logo Inferfast"/>
+        Reconocimiento Inferfast
+      </div>
+    </div>
+  </section>
+
+  <!-- ESPECIALIZACIÓN -->
+  <section class="specialization">
+    <h2><i class="fas fa-graduation-cap"></i> Especialización</h2>
+    <div class="grid-cards">
+      <div class="card"><i class="fas fa-shield-alt"></i> Seguridad para Web</div>
+      <div class="card"><i class="fas fa-code"></i> Desarrollo web y landing pages</div>
+      <div class="card"><i class="fas fa-user-check"></i> Pruebas de usabilidad</div>
+      <div class="card"><i class="fas fa-user-secret"></i> Análisis forense</div>
+      <div class="card">
+        <img src="img/seguridad wed.jpg" alt="Seguridad Web"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
   <footer class="footer">
+    <div class="footer-social">
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#"><i class="fab fa-github"></i></a>
+    </div>
     <p>© Hecho por freYu-eng</p>
   </footer>
 </body>
