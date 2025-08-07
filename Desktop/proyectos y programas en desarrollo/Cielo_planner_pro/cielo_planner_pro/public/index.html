@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cielo Planner Pro</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a Cielo Planner Pro</h1>
+        <nav>
+            <ul>
+                <li><a href="views/events.php">Eventos</a></li>
+                <li><a href="views/members.php">Miembros</a></li>
+                <li><a href="views/donations.php">Donaciones</a></li>
+                <li><a href="views/communications.php">Comunicaciones</a></li>
+                <li><a href="views/media.php">Multimedia</a></li>
+                <li><a href="views/reports.php">Reportes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Bienvenido/a</h2>
+            <p>
+                Cielo Planner Pro es la plataforma integral para la gestión de tu iglesia, ministerio o conferencia en República Dominicana. Organiza eventos, administra miembros, recibe donaciones y comunica a tu comunidad de manera sencilla y segura.
+            </p>
+            <button class="btn-principal" onclick="window.location.href='views/events.php'">Crear nuevo evento</button>
+            <button class="btn-secundario" onclick="window.location.href='views/donations.php'">Ver historial de donaciones</button>
+        </section>
+        <section>
+            <h2>Próximos Eventos</h2>
+            <div id="event-list">
+                <div class="card">
+                    <h3>Culto de Adoración</h3>
+                    <p><strong>Fecha:</strong> 10/08/2025</p>
+                    <p><strong>Hora:</strong> 10:00 AM</p>
+                    <p><strong>Lugar:</strong> Iglesia Central, Santo Domingo</p>
+                    <button class="btn-principal">Ver detalles</button>
+                </div>
+                <div class="card">
+                    <h3>Conferencia Juvenil</h3>
+                    <p><strong>Fecha:</strong> 15/08/2025</p>
+                    <p><strong>Hora:</strong> 6:00 PM</p>
+                    <p><strong>Lugar:</strong> Auditorio Nacional</p>
+                    <button class="btn-principal">Ver detalles</button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Últimas Donaciones</h2>
+            <div id="donation-list">
+                <div class="card">
+                    <p><strong>Donante:</strong> Ana Pérez</p>
+                    <p><strong>Monto:</strong> RD$ 2,000</p>
+                    <p><strong>Fecha:</strong> 28/07/2025</p>
+                    <button class="btn-secundario">Ver recibo</button>
+                </div>
+                <div class="card">
+                    <p><strong>Donante:</strong> Juan Rodríguez</p>
+                    <p><strong>Monto:</strong> RD$ 1,500</p>
+                    <p><strong>Fecha:</strong> 27/07/2025</p>
+                    <button class="btn-secundario">Ver recibo</button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Comunicaciones Recientes</h2>
+            <div id="communications-list">
+                <div class="card">
+                    <p><strong>Asunto:</strong> Invitación a reunión de líderes</p>
+                    <p><strong>Enviado:</strong> 25/07/2025</p>
+                    <button class="btn-secundario">Leer mensaje</button>
+                </div>
+                <div class="card">
+                    <p><strong>Asunto:</strong> Recordatorio de evento</p>
+                    <p><strong>Enviado:</strong> 24/07/2025</p>
+                    <button class="btn-secundario">Leer mensaje</button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Recursos Multimedia</h2>
+            <div id="media-list">
+                <div class="card">
+                    <p><strong>Título:</strong> Sermón: La fe en acción</p>
+                    <button class="btn-principal">Ver video</button>
+                </div>
+                <div class="card">
+                    <p><strong>Título:</strong> Transmisión en vivo: Culto Dominical</p>
+                    <button class="btn-principal">Ver transmisión</button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Reportes y Estadísticas</h2>
+            <div class="card">
+                <p><strong>Asistencia semanal:</strong> 320 personas</p>
+                <p><strong>Donaciones este mes:</strong> RD$ 15,000</p>
+                <button class="btn-secundario" onclick="window.location.href='views/reports.php'">Ver más reportes</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Cielo Planner Pro. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

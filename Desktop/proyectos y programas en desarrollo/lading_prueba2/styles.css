@@ -22,14 +22,13 @@ h1, h2, h3 {
   line-height: 1.2;
 }
 
-/* ======== UTILIDADES ======== */
-.grid-cards {
+/* ======== ESPECIALIZACIÓN ======== */
+.grid-cards4 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
+  gap: 2rem
 }
-
-.card {
+.card4 {
   background: #fff;
   color: #00bcd4;
   padding: 2rem;
@@ -49,7 +48,7 @@ h1, h2, h3 {
   height: 80px;
   object-fit: cover;
   border-radius: 50%;
-  box-shadow: 0 2px 16px rgba(0, 188, 212, 0.15);
+  box-shadow: 0 2px 16px rgba(230, 255, 1, 0.15);
 }
 
 /* ======== HEADER & NAV ======== */
@@ -121,6 +120,7 @@ h1, h2, h3 {
   font-size: 2.5rem;
   background: linear-gradient(90deg, #00bcd4, #0097a7);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -178,6 +178,69 @@ h1, h2, h3 {
   padding-left: 1rem;
   border-left: 5px solid #00bcd4;
   border-radius: 8px;
+}
+/* ======== CARDS Experiencia ======== */
+.card1{
+  background: #fff;
+  color: #00bcd4;
+  padding: 2rem;
+  border: 2px solid #00bcd4;
+  border-radius: 0.75rem;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+.grid-cards1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+/* ======== CARDS CUALIDADES ======== */
+.card2 {
+  background: #fff;
+  color: #00bcd4;
+  padding: 2rem;
+  border: 2px solid #00bcd4;
+  border-radius: 0.75rem;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+.grid-cards2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+
+/* ======== CARDS LOGROS ======== */
+.card3 {
+  background: #fff;
+  color: #00bcd4;
+  padding: 2rem;
+  border: 2px solid #00bcd4;
+  border-radius: 0.75rem;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+.grid-cards3{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
 }
 
 /* ======== FOOTER ======== */
